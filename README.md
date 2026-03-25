@@ -4,7 +4,7 @@ Welcome to the **FitSync** project! This repository is your home for the next 5 
 
 ## 📋 Project Basics
 * **Project Title:** FitSync (Personal Health Analytics)
-* **Course:** Code with AI 
+* **Course:** Code with AI - ACT
 * **Institution:** Saras AI Institute 
 
 ## 🛠️ Repository Setup & Naming
