@@ -60,4 +60,11 @@ def calculate_recovery_score(df):
 
     return df
 
-# Add any additional helper functions or constants above
+# Function to process the data by loading it and calculating the recovery score
+
+def process_data():
+    df = load_data()
+    df = calculate_recovery_score(df)
+    return df
+
+# This function will be used by the Streamlit dashboard to get the processed data
