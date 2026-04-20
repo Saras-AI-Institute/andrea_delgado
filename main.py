@@ -1,12 +1,20 @@
 import streamlit as st  # type: ignore[import]
 from PIL import Image  # for handling images
 import datetime
+import matplotlib.pyplot as plt  # for plotting graphs
+import plotly.express as px  # for interactive charts
+import pandas as pd  # for data manipulation 
+
 
 # Setting the page configuration
 st.set_page_config(
     layout="wide", 
-    page_title="FitSync"
+    page_title="FitSync",
+    page_icon="🏋️‍♂️"
 )
+
+# --- Shared on all pages ---
+st.logo('/workspaces/andrea_delgado/assets/fitsync_logo_b.png')
 
 # --- Logo and Dark/Light Theme Toggle ---
 
@@ -14,7 +22,7 @@ st.set_page_config(
 logo = Image.open("/workspaces/andrea_delgado/assets/fitsync_logo_b.png")
 
 # Add the logo at the top
-st.image(logo, width=150)
+st.image(logo, width=170)
 
 # Initialize session state for theme toggle
 if 'dark_mode' not in st.session_state:
