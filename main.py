@@ -13,6 +13,7 @@ st.set_page_config(
     page_icon="🏋️‍♂️"
 )
 
+
 # --- Shared on all pages ---
 # Display your logo at the top of the app
 st.image("/workspaces/andrea_delgado/assets/fitsync_logo_w.png", use_column_width=True)
@@ -88,6 +89,4 @@ with st.container():
     st.write("""
     FitSync is your companion for health analytics. It helps track your daily activities, analyze trends, and keep your health goals on track.
     """)
-
-
 

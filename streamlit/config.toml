@@ -1,0 +1,9 @@
+# .streamlit/config.toml
+
+[theme]
+base="dark"                    # Enable dark mode
+primaryColor="#1E90FF"        # Set the primary color (Dodger Blue)
+backgroundColor="#111111"     # Background color for the app content
+secondaryBackgroundColor="#222222" # Secondary background color, for sidebars/aux panels
+textColor="#FFFFFF"           # Text color for optimum contrast
+font="sans serif"             # Set the default font
