@@ -1,10 +1,10 @@
 import streamlit as st  # type: ignore[import]
 from PIL import Image  # for handling images
 import datetime
-import matplotlib.pyplot as plt  # for plotting graphs
-import plotly.express as px  # for interactive charts
 import pandas as pd  # for data manipulation 
 
+# Install matplotlib
+# conda install matplotlib
 
 # Setting the page configuration
 st.set_page_config(
@@ -14,15 +14,23 @@ st.set_page_config(
 )
 
 # --- Shared on all pages ---
-st.logo('/workspaces/andrea_delgado/assets/fitsync_logo_b.png')
+# Display your logo at the top of the app
+st.image("/workspaces/andrea_delgado/assets/fitsync_logo_w.png", use_column_width=True)
 
+# Set a title and subtitle with centered alignment
+#st.title("Welcome to FitSync!", anchor=None)
+#st.subheader("Your personalized fitness journey.", anchor=None)
 # --- Logo and Dark/Light Theme Toggle ---
 
 # Load your logo image (ensure the image file is in your directory)
 logo = Image.open("/workspaces/andrea_delgado/assets/fitsync_logo_b.png")
 
 # Add the logo at the top
-st.image(logo, width=170)
+#st.image(logo, width=170)
+
+# Shared on all Pages
+#st.logo("/workspaces/andrea_delgado/assets/fitsync_logo_w.png")
+st.sidebar.text("Made with ❤️ by Andie")
 
 # Initialize session state for theme toggle
 if 'dark_mode' not in st.session_state:
@@ -58,8 +66,8 @@ body {
 st.markdown(theme_css, unsafe_allow_html=True)
 
 # --- Hero Section ---
-st.markdown("<h1 style='text-align: center; font-size: 2.5em;'>Welcome to FitSync</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center;'>Your Personal Health Analytics Dashboard</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-size: 2.5em;'>✨ Welcome to FitSync ✨</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Your Personal Health Analytics Dashboard 🏋️</h2>", unsafe_allow_html=True)
 st.markdown("<div style='text-align: center;'><button style='font-size: 1.2em;'>Get Started</button></div>", unsafe_allow_html=True)
 
 # --- Dashboard Metrics/Cards Section ---
@@ -80,3 +88,6 @@ with st.container():
     st.write("""
     FitSync is your companion for health analytics. It helps track your daily activities, analyze trends, and keep your health goals on track.
     """)
+
+
+
