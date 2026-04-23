@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Set the page configuration for a wide layout and set the page title
-st.set_page_config(layout="wide", page_title="Trends & Insights")
+st.set_page_config(layout="wide", page_title="Trends & Insights", page_icon="📈")
 
 # Title of the page
 st.title("Trends & Insights")

@@ -5,13 +5,24 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Set the page configuration for a wide layout and set the page title
-st.set_page_config(layout="wide", page_title="FitSync")
+st.set_page_config(layout="wide", page_title="FitSync", page_icon="📊")
 
 # Tpip list | grep streamlitpip list | grep streamlititle of the dashboard
 st.title("FitSync - Personal Health Analytics")
 
+# To optimize performance, we can cache the data loading function
+#@st.cache_data
+
 # Load the data using process_data
-df = process_data()
+#df = process_data()
+
+# Cache the data loading step so Streamlit does not recalculate it every rerun
+@st.cache_data
+def load_data():
+    return process_data()
+
+# Call the cached function
+df = load_data()
 
 # Sidebar for Filters
 st.sidebar.header("Filters")
