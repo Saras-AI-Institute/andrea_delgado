@@ -30,8 +30,9 @@ logo = Image.open("/workspaces/andrea_delgado/assets/fitsync_logo_b.png")
 #st.image(logo, width=170)
 
 # Shared on all Pages
-#st.logo("/workspaces/andrea_delgado/assets/fitsync_logo_w.png")
+#st.logo("/workspaces/andrea_delgado/assets/fitsync_logo_b.png")
 st.sidebar.text("Made with ❤️ by Andie")
+
 
 # Initialize session state for theme toggle
 if 'dark_mode' not in st.session_state:
@@ -77,11 +78,11 @@ col1, col2, col3 = st.columns(3)
 
 # Add metric boxes or dashboard-style cards
 with col1:
-    st.metric("Steps Today", "5,432")
+    st.metric("➡️ Steps Today", "5,432")
 with col2:
-    st.metric("Water Intake", "2.5 L")
+    st.metric("🩵 Water Intake", "2.5 L")
 with col3:
-    st.metric("Calories Burned", "345 cal")
+    st.metric("🔥 Calories Burned", "345 cal")
 
 # --- What FitSync Does Section ---
 with st.container():
