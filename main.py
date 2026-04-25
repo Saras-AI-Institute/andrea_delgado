@@ -1,8 +1,9 @@
+#Added this line to fix the error on streamlit for the image
+from pathlib import Path
 import streamlit as st  # type: ignore[import]
 from PIL import Image  # for handling images
 import datetime
 import pandas as pd  # for data manipulation 
-
 # Install matplotlib
 # conda install matplotlib
 
@@ -12,7 +13,6 @@ st.set_page_config(
     page_title="FitSync",
     page_icon="🏋️‍♂️"
 )
-
 
 # --- Shared on all pages ---
 # Display your logo at the top of the app
@@ -24,7 +24,9 @@ st.image("/workspaces/andrea_delgado/assets/fitsync_logo_b.png", use_column_widt
 # --- Logo and Dark/Light Theme Toggle ---
 
 # Load your logo image (ensure the image file is in your directory)
-logo = Image.open("/workspaces/andrea_delgado/assets/fitsync_logo_b.png")
+#logo = Image.open("/workspaces/andrea_delgado/assets/fitsync_logo_b.png")
+logo_path = Path(__file__).parent / "assets" / "fitsync_logo_b.png"
+st.image(str(logo_path), use_container_width=True)
 
 # Add the logo at the top
 #st.image(logo, width=170)
