@@ -16,7 +16,7 @@ st.set_page_config(
 
 # --- Shared on all pages ---
 # Display your logo at the top of the app
-st.image("/workspaces/andrea_delgado/assets/fitsync_logo_b.png", use_column_width=True)
+#st.image("/workspaces/andrea_delgado/assets/fitsync_logo_b.png", use_column_width=True)
 
 # Set a title and subtitle with centered alignment
 #st.title("Welcome to FitSync!", anchor=None)
@@ -26,7 +26,7 @@ st.image("/workspaces/andrea_delgado/assets/fitsync_logo_b.png", use_column_widt
 # Load your logo image (ensure the image file is in your directory)
 #logo = Image.open("/workspaces/andrea_delgado/assets/fitsync_logo_b.png")
 logo_path = Path(__file__).parent / "assets" / "fitsync_logo_b.png"
-st.image(str(logo_path), use_container_width=True)
+st.image(str(logo_path), use_column_width=True)
 
 # Add the logo at the top
 #st.image(logo, width=170)
