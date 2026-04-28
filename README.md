@@ -1,4 +1,4 @@
-# FitSync: Health Analytics Platform 🚀
+# FitSync: Health Analytics Platform 🏋️
 
 Welcome to **FitSync**, your personal health analytics dashboard built with the power of Python and Streamlit.
 
